@@ -1,4 +1,4 @@
-# imfeelinglucky-dockerised
+# imfeelinglucky-dockerized
 
 <h3>Project deployment: </h3>
 
@@ -8,7 +8,7 @@ git clone https://github.com/itwixspecial/lucky-dockerized.git
 ``
 Change directory:<br>
 ``
-cd lucky-dockerised
+cd lucky-dockerized
 ``
 
 Create .env:<br>
