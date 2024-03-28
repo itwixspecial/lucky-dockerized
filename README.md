@@ -33,6 +33,9 @@ docker-compose run composer install
 Run Migration && Generate keys:<br>
 ``
 docker-compose run artisan migrate
+``
+<br>
+``
 docker-compose run artisan key:generate   
 ``
 
