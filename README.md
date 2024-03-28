@@ -21,7 +21,7 @@ Set .env : mysql settings(set db_host "mysql")
 
 Run: <br>
 ``
-docker-compose up -d
+docker-compose up nginx -d
 ``
 
 Run Migration && Generate keys:<br>
