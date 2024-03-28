@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\UniqueLink;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 
 class RegistrationController extends Controller

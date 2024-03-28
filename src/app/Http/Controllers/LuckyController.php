@@ -3,21 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\UniqueLink;
 use App\Http\Traits\HandlesUniqueLinks;
 
 class LuckyController extends Controller
 {
     use HandlesUniqueLinks;
 
-    /**
-     * Handle the "I'm Feeling Lucky" request.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  string  $link
-     * @return \Illuminate\View\View
-     */
-    public function imFeelingLucky(Request $request, $link)
+    public function imFeelingLucky($link)
     {
         $uniqueLink = $this->checkUniqueLink($link);
 
