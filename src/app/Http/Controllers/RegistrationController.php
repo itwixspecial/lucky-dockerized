@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\RegisterRequest;
 use App\Models\User;
 use App\Models\UniqueLink;
 use Illuminate\Support\Str;
@@ -14,15 +15,8 @@ class RegistrationController extends Controller
         return view('register');
     }
 
-    public function register(Request $request)
+    public function register(RegisterRequest $request)
     {
-        $request->validate([
-            'username' => 'required|string|max:255',
-            'phonenumber' => 'required|string|max:15|unique:users,phonenumber',
-        ], [
-            'phonenumber.unique' => 'The phone number has already been taken.',
-        ]);
-
         try {
             $user = User::create([
                 'name' => $request->input('username'),
