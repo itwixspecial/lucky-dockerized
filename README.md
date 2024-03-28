@@ -24,6 +24,12 @@ Run: <br>
 docker-compose up nginx -d
 ``
 
+Install composer <br>
+``
+docker-compose run composer install
+``
+
+
 Run Migration && Generate keys:<br>
 ``
 docker-compose run artisan migrate
